@@ -21,7 +21,7 @@ var player = {
     spriteY : 0,
 
     image : new Image(),
-    imageloc : 'goodguys1.png',
+    imageloc : 'img/goodguys1.png',
 
     setImLoc : function() { this.image.src = this.imageloc; },
     
@@ -29,8 +29,6 @@ var player = {
     setSpriteY : function(Y) { this.spriteY = Y; },  
 
     mCounter : 0,   
-
-
 
     checkDead : function() {
         var ongo = this.checkFloor(this.X,this.Y,deads);
@@ -51,7 +49,6 @@ var player = {
             palautus = (Math.abs(tY-10-bi)<10);
             if (palautus) { console.log("true"); }
         }
-      
       return palautus;
     },
 

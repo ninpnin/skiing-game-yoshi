@@ -43,15 +43,12 @@ function initCanvas() {
     console.log("CONTEXT SUPPORED");
     loadImage1();
   }
-
   runGame();
 }
 
 function loadImage1() {
-  image1 = new Image();
   backImage = new Image();
-  image1.src = 'goodguys.png';
-  backImage.src = 'hiihtotausta1.png';
+  backImage.src = 'img/hiihtotausta1.png';
   console.log("LOADED")
 }
 
@@ -64,7 +61,6 @@ function runGame() {
   function listenToKeyboard() {
 
     // key 0 == keycode 48
-
     $(document).keydown(function(e) {
       
       if (!dead) {

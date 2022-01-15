@@ -1,0 +1,70 @@
+#canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+#lumisade {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#hyppaa {
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    z-index: 5;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    opacity: 0.0;
+}
+
+#voitit {
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    z-index: 5;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    opacity: 0.0;
+}
+
+#joulua {
+    position: absolute;
+    left: 850px;
+    top: 200px;
+    z-index: 5;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    opacity: 0.0;
+}
+
+#yrita {
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    z-index: 5;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    opacity: 0.0;
+}
+
+#kortti {
+    position: absolute;
+    left: 650px;
+    top: 350px;
+    z-index: 1;
+    opacity: 0.0;
+}
+
+body {
+    /*You can use any kind of background here.*/
+    background: #6b92b9;
+}
+
+p {
+    max-height: 1000px;
+}

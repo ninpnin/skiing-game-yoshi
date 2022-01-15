@@ -3,7 +3,7 @@ var context = null;
 var image1 = null;
 var backImage = null;
 
-var audio = new Audio("musa1.mp3");
+var audio = new Audio("audio/musa.mp3");
 
 var askeinenX = 0;
 var askeinenY = 0;

@@ -1,0 +1,102 @@
+<head>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="spriteTesti.js"></script>
+<script src="lumisade.js"></script>
+<script src="tausta.js"></script>
+<script src="player.js"></script>
+<script src="floors.js"></script>
+<script src="siihku.js"></script>
+
+<head/>
+
+<body id = "body">
+
+<div id="hyppaa">hypp&auml;&auml; &#8679; hypp&auml;&auml;</br>
+Varo kivi&auml;!</div> 
+
+<div id = "voitit">Voitit pelin!</div>
+<div id = "yrita">Oi voi!</br>Paina mit&auml; tahansa nappulaa yritt&auml;&auml;ksesi uudestaan.</div>
+
+<div id = "joulua">Hyv&auml;&auml; joulua!</div>
+
+<canvas id="canvas" width="2400px" height"1000px"></canvas>
+<canvas id="lumisade" width="2400px" height"1080px"></canvas>
+
+
+
+</body> 
+<style>
+
+
+#canvas {
+    position: absolute; 
+	top: 0px;
+	left: 0px;
+    z-index: 0;
+}
+
+#lumisade {
+    position: absolute; 
+	top: 0px;
+	left: 0px;
+    z-index: 2;
+}
+
+#hyppaa {
+	position: absolute;
+	right: 300px;
+	top: 200px;
+	z-index: 5;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	opacity: 0.0;
+}
+
+#voitit {
+	position: absolute;
+	left: 600px;
+	top: 200px;
+	z-index: 5;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	opacity: 0.0;
+}
+#joulua {
+	position: absolute;
+	left: 850px;
+	top: 200px;
+	z-index: 5;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	opacity: 0.0;
+}
+
+#yrita {
+	position: absolute;
+	left: 600px;
+	top: 200px;
+	z-index: 5;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	opacity: 0.0;
+}
+
+#kortti {
+	position: absolute;
+	left: 650px;
+	top: 350px;
+	z-index: 1;
+	opacity: 0.0;
+}
+
+body {
+	/*You can use any kind of background here.*/
+	background: #6b92b9;
+}
+
+p {
+    max-height: 1000px;
+}
+
+</style> 

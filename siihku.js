@@ -8,11 +8,8 @@ var suihku = {
 	//Lets draw the flakes
 	draw : function ()
 	{
-
-
 		var xS = 73;
 		var yS = 80;
-
 
 		if (player.tuettu && player.rockCounter === 0) {
 			this.particles.push({
@@ -47,7 +44,6 @@ var suihku = {
 	
 
 	update : function () {
-		
 		for(var i = 0; i < this.particles.length; i++)
 		{
 			var p = this.particles[i];
@@ -64,10 +60,8 @@ var suihku = {
 				
 				p.x = p.x + DX;
 				p.y = p.y + DY;
-			}
-			
+			}	
 		}
-		
 	},
 
 	land : function () {

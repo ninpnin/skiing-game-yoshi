@@ -1,4 +1,4 @@
-var canvas1= null;
+var canvas1 = null;
 var ctx = null;
 
 window.onload = function(){

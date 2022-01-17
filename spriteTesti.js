@@ -52,6 +52,10 @@ function loadImage1() {
   console.log("LOADED")
 }
 
+function jumpOrStruggle() {
+  if (!player.test) player.jump(); else player.setAccY(-0.125);
+}
+
 function runGame() {
   var setXY = null;
   yrita = document.getElementById("yrita");
@@ -84,7 +88,7 @@ function runGame() {
         }
         if (e.keyCode == 37 && player.test) { player.setAccX(-0.125); }
         if (e.keyCode == 39 && player.test) { player.setAccX(0.125); }
-        if (e.keyCode == 38 ) { if (!player.test) player.jump(); else player.setAccY(-0.125); }//player.AccY = -0.125; }
+        if (e.keyCode == 38 ) { jumpOrStruggle(); }//player.AccY = -0.125; }
         if (e.keyCode == 40 ) { player.setAccY(0.125); }
         if (e.keyCode == 32) { lineToConsole(); }
         if (e.keyCode == 66) { player.VelX = 0; player.VelY =0; }
@@ -112,6 +116,17 @@ function runGame() {
         else if ((e.keyCode == 40 || e.keyCode == 38) && player.test) { player.setAccY(0); }
       }
     });
+  }
+
+  function listenToTouchscreen() {
+    $(document).on({ 'touchstart' : function() {
+      jumpOrStruggle();
+    }});
+    $(document).on({ 'touchend' : function() {
+      if(player.test) {
+        player.setAccY(0);
+      }
+    }});
   }
   console.log(W)
   
@@ -186,4 +201,5 @@ function runGame() {
   }
 
   listenToKeyboard();
+  listenToTouchscreen();
 }

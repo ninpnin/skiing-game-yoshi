@@ -120,7 +120,18 @@ function runGame() {
 
   function listenToTouchscreen() {
     $(document).on({ 'touchstart' : function() {
-      jumpOrStruggle();
+      if (!dead) {
+        jumpOrStruggle();
+      } else {
+        dead = false;
+        player.recover();
+        player.X = 400;
+        player.Y = 400;
+        player.tuettu = true;
+        player.Xoffset = 0;
+        player.Yoffset = 0;
+        player.VelX = 0;
+      }
     }});
     $(document).on({ 'touchend' : function() {
       if(player.test) {
